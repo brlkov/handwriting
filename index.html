@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard writing</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<div class="header">
+    Клавиатурный почерк
+</div>
+
+<div class="error">
+    <h1>Формат экрана не поддерживается</h1>
+    <p>Используйте компьютер с разрешением экрана не менее 1280х720</p>
+</div>
+
+<div class="card">
+
+    <div class="example">
+        <label for="example-input">
+            Введите контрольную фразу длиной от 10 до 30 символов
+        </label>
+        <div id="example-div">
+            <input id="example-input"/>
+            <button id="example-button">➤</button>
+        </div>
+
+    </div>
+
+    <div class="text">
+        <div id="example-text"></div>
+        <div id="input-div">
+            <input id="text-input"/>
+            <button id="again-button">↺</button>
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="results-buttons">
+            <button id="result-button">Результат</button>
+            <button id="graphic-button">График</button>
+        </div>
+        <div id="result"></div>
+        <canvas id="canvas" width="0" height="0"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+
+</html>

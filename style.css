@@ -1,0 +1,180 @@
+html {
+    background-color: #e1e1e1;
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 80vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.error {
+    display: none;
+}
+
+
+.card {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+}
+#example-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#example-input, #text-input {
+    width: 950px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: gray;
+}
+#example-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 1px 0 0 1px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background: #e1e1e1;
+
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+#example-button:hover {
+    cursor: pointer;
+    background: #c0c0c0;
+}
+
+
+.text {
+    display: none;
+    flex-direction: column;
+}
+#input-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+#again-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0 0 2px 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    background: #e1e1e1;
+
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+#again-button:hover {
+    cursor: pointer;
+    background: #c0c0c0;
+}
+
+
+.results {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.results-buttons {
+    display: flex;
+    gap: 0 10px;
+    margin: 20px 0;
+}
+#result-button, #graphic-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    background: #e1e1e1;
+
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+#result-button:hover, #graphic-button:hover {
+    cursor: pointer;
+    background: #c0c0c0;
+}
+#result {
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    flex-direction: column;
+}
+#canvas {
+    height: 300px;
+    width: 1000px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .header {
+        display: none;
+    }
+    .card {
+        display: none;
+    }
+    .error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .error h1 {
+        font-size: 40px;
+    }
+    .error p {
+        font-size: 20px;
+    }
+}
